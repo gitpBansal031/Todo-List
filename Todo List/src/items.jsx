@@ -8,6 +8,7 @@ function Items() {
     }
     function add() {
         settasks([...tasks, { task: val, key: uuidv4(), done: false }]);
+        newval("");
     }
     function del(id) {
         tasks = tasks.filter((task) => task.key != id);
